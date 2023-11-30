@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="866615f8-1a97-4ef1-b078-f666c902921a" name="Default Changelist" comment=":tada:&#10;  1. 增加 etcd 日志输出指定根目录&#10;  2. 增加私有 harbor 地址">
+      <change afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/bug-report.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/enhancement.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/mirror.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/stale.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ansible.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/deprecated/kuboard.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/deprecated/practice/dockerize_system_service.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/deprecated/practice/es_cluster.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/deprecated/practice/go_web_app/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/deprecated/practice/go_web_app/Dockerfile-more" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/deprecated/practice/go_web_app/hellogo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/deprecated/practice/go_web_app/hellogo.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/deprecated/practice/go_web_app/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/deprecated/practice/java_war_app.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/deprecated/practice/mariadb_cluster.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/chrony.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/dashboard.1.6.3.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/dashboard.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/efk.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/gitlab/app.yaml.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/gitlab/config.sh.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/gitlab/gitlab-ci.yml.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/gitlab/gitlab-install.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/gitlab/gitlab-runner.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/gitlab/pics/active-runner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/gitlab/pics/cicd-pipeline.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/gitlab/pics/cicd-setting.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/gitlab/pics/runner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/gitlab/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/harbor.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/helm.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/hpa.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/ingress-tls.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/ingress.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/ipvs.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/istio.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/jenkins.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/kernel_upgrade.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/kubeapps.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/kubedns.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/kubesphere.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/log-pilot.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/metallb.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/metrics-server.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/networkpolicy.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/nfs-server.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/prometheus.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/guide/rollingupdateWithZeroDowntime.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/mixes/DoneList.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/mixes/HowToContribute.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/mixes/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/mixes/conformance.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/mixes/donate.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/op/ch_apiserver_cert.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/op/cluster_restore.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/op/force_ch_certs.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/op/kcfg-adm.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/op/loadballance_ingress_nodeport.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/op/op-etcd.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/op/op-index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/op/op-master.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/op/op-node.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/op/upgrade.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/release-notes/kubeasz-3.5.0.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/release-notes/kubeasz-3.5.1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/release-notes/kubeasz-3.5.2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/release-notes/kubeasz-3.5.3.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/release-notes/kubeasz-3.6.0.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/release-notes/kubeasz-3.6.1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/release-notes/kubeasz-3.6.2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/00-planning_and_overall_intro.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/01-CA_and_prerequisite.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/02-install_etcd.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/03-container_runtime.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/04-install_kube_master.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/05-install_kube_node.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/06-install_network_plugin.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/07-install_cluster_addon.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/08-cluster-storage.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/config_guide.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/ex-lb.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/ezctl.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/kubeasz_on_public_cloud.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/multi_os.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/multi_platform.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/network-plugin/calico-bgp-rr.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/network-plugin/calico.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/network-plugin/cilium-example.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/network-plugin/cilium.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/network-plugin/flannel.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/network-plugin/kube-ovn.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/network-plugin/kube-router.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/network-plugin/network-check.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/offline_install.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/setup/quickStart.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/hosts.allinone" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/hosts.multi-node" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ezctl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ezdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/efk/es-dynamic-pv/es-statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/efk/es-index-rotator/rotator.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/efk/es-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/efk/es-static-pv/es-pv0.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/efk/es-static-pv/es-pv1.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/efk/es-static-pv/es-pv2.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/efk/es-static-pv/es-statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/efk/es-without-pv/es-statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/efk/fluentd-es-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/efk/fluentd-es-ds.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/efk/kibana-deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/efk/kibana-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/efk/log-pilot/log-pilot-filebeat.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/elasticsearch/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/elasticsearch/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/elasticsearch/OWNERS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/elasticsearch/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/elasticsearch/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/elasticsearch/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/elasticsearch/templates/client-deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/elasticsearch/templates/client-pdb.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/elasticsearch/templates/client-svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/elasticsearch/templates/configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/elasticsearch/templates/data-pdb.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/elasticsearch/templates/data-statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/elasticsearch/templates/master-pdb.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/elasticsearch/templates/master-statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/elasticsearch/templates/master-svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/elasticsearch/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/es-cluster/es-values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/ingress/nginx-ingress/nginx-ingress-svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/ingress/nginx-ingress/nginx-ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/ingress/nginx-ingress/tcp-services-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/ingress/nginx-ingress/udp-services-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/ingress/test-hello.ing.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/ingress/traefik/tls/hello-tls.ing.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/ingress/traefik/tls/k8s-dashboard.ing.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/ingress/traefik/tls/traefik-controller.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/ingress/traefik/traefik-ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/ingress/traefik/traefik-ui.ing.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/ingress/whoami.ing.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/ingress/whoami.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/OWNERS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/templates/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/templates/home-pvc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/templates/jenkins-agent-svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/templates/jenkins-master-deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/templates/jenkins-master-ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/templates/jenkins-master-networkpolicy.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/templates/jenkins-master-svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/templates/jenkins-test.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/templates/jobs.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/templates/rbac.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/templates/secret.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/templates/service-account.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/templates/test-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/jenkins/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/OWNERS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/files/docker-entrypoint-initdb.d/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/templates/initialization-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/templates/master-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/templates/master-statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/templates/master-svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/templates/secrets.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/templates/slave-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/templates/slave-statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/templates/slave-svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/templates/test-runner.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/templates/tests.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/values-production.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/mariadb/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mariadb-cluster/my-values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mysql-cluster/mysql-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mysql-cluster/mysql-services.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mysql-cluster/mysql-statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/mysql-cluster/mysql-test-client.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/OWNERS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/ci/haproxy-enabled-values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/_configs.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/redis-auth-secret.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/redis-ha-announce-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/redis-ha-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/redis-ha-exporter-script-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/redis-ha-pdb.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/redis-ha-role.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/redis-ha-rolebinding.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/redis-ha-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/redis-ha-serviceaccount.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/redis-ha-servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/redis-ha-statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/redis-haproxy-deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/redis-haproxy-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/redis-haproxy-serviceaccount.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/redis-haproxy-servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/tests/test-redis-ha-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/templates/tests/test-redis-ha-pod.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/redis-ha/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/start.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/redis-cluster/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/storage/local-storage/example-sts.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/storage/local-storage/local-pv1.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/storage/local-storage/local-pv2.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/storage/local-storage/local-storage-class.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/storage/test.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pics/alipay.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pics/ha-1x.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pics/ha-3x.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pics/kubeasz.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pics/wxpay.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/01.prepare.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/02.etcd.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/03.runtime.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/04.kube-master.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/05.kube-node.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/06.network.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/07.cluster-addon.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/10.ex-lb.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/11.harbor.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/21.addetcd.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/22.addnode.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/23.addmaster.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/31.deletcd.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/32.delnode.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/33.delmaster.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/90.setup.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/91.start.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/92.stop.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/93.upgrade.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/94.backup.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/95.restore.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/96.update-certs.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/playbooks/99.clean.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/calico/tasks/calico-rr.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/calico/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/calico/templates/bgp-default.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/calico/templates/bgp-rr.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/calico/templates/calico-csr.json.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/calico/templates/calico-v3.19.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/calico/templates/calico-v3.23.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/calico/templates/calico-v3.24.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/calico/templates/calicoctl.cfg.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/calico/vars/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/chrony/chrony.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/chrony/defaults/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/chrony/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/chrony/templates/chronyd.service.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/chrony/templates/client.conf.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/chrony/templates/server.conf.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cilium/cilium.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cilium/files/cilium-1.13.6.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cilium/files/star_war_example/http-sw-app.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cilium/files/star_war_example/sw_l3_l4_l7_policy.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cilium/files/star_war_example/sw_l3_l4_policy.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cilium/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cilium/templates/values.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/clean/clean_node.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/clean/defaults/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/clean/tasks/clean_chrony.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/clean/tasks/clean_etcd.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/clean/tasks/clean_lb.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/clean/tasks/clean_master.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/clean/tasks/clean_node.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/clean/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/files/kube-prometheus-stack-45.23.0.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/files/kubeapps-12.4.3.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/tasks/cilium_connectivity_check.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/tasks/coredns.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/tasks/dashboard.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/tasks/kubeapps.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/tasks/local-storage.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/tasks/metrics-server.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/tasks/network_check.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/tasks/nfs-provisioner.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/tasks/nodelocaldns.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/tasks/prometheus.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/cilium-check/check-part1.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/cilium-check/connectivity-check.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/cilium-check/namespace.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/dashboard/admin-user-sa-rbac.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/dashboard/kubernetes-dashboard.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/dashboard/read-user-sa-rbac.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/dns/coredns.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/dns/kubedns.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/dns/nodelocaldns-iptables.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/dns/nodelocaldns-ipvs.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/kubeapps/kubeapps-admin-token.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/kubeapps/single-namespace-edit-token.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/kubeapps/single-namespace-view-token.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/kubeapps/values.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/local-storage/local-path-storage.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/local-storage/test-pod.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/metrics-server/components.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/network-check/namespace.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/network-check/network-check.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/nfs-provisioner/nfs-provisioner.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/nfs-provisioner/test-pod.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/prometheus/dingtalk-webhook.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/prometheus/etcd-client-csr.json.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/prometheus/example-config-alertsmanager.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/templates/prometheus/values.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-addon/vars/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-restore/defaults/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/cluster-restore/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/containerd/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/containerd/templates/config.toml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/containerd/templates/containerd.service.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/containerd/templates/crictl.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/deploy/deploy.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/deploy/tasks/add-custom-kubectl-kubeconfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/deploy/tasks/create-kube-controller-manager-kubeconfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/deploy/tasks/create-kube-proxy-kubeconfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/deploy/tasks/create-kube-scheduler-kubeconfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/deploy/tasks/create-kubectl-kubeconfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/deploy/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/deploy/templates/admin-csr.json.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/deploy/templates/ca-config.json.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/deploy/templates/ca-csr.json.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/deploy/templates/crb.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/deploy/templates/kube-controller-manager-csr.json.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/deploy/templates/kube-proxy-csr.json.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/deploy/templates/kube-scheduler-csr.json.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/deploy/templates/user-csr.json.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/deploy/vars/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/docker/files/docker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/docker/files/docker-tag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/docker/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/docker/templates/daemon.json.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/docker/templates/docker.service.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/docker/vars/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/etcd/clean-etcd.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/etcd/defaults/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/etcd/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/etcd/templates/etcd-csr.json.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/etcd/templates/etcd.service.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/ex-lb/clean-ex-lb.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/ex-lb/defaults/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/ex-lb/ex-lb.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/ex-lb/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/ex-lb/templates/keepalived-backup.conf.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/ex-lb/templates/keepalived-master.conf.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/ex-lb/templates/keepalived.service.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/ex-lb/templates/l4lb.conf.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/ex-lb/templates/l4lb.service.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/flannel/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/flannel/templates/kube-flannel.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/harbor/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/harbor/templates/harbor-csr.json.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/harbor/templates/harbor-v1.10.yml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/harbor/templates/harbor-v2.1.yml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/harbor/templates/harbor-v2.6.yml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/harbor/vars/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-lb/clean-kube-lb.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-lb/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-lb/templates/kube-lb.conf.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-lb/templates/kube-lb.service.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-master/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-master/templates/aggregator-proxy-csr.json.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-master/templates/kube-apiserver.service.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-master/templates/kube-controller-manager.service.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-master/templates/kube-scheduler.service.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-master/templates/kubernetes-csr.json.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-master/vars/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-node/tasks/create-kubelet-kubeconfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-node/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-node/templates/cni-default.conf.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-node/templates/kube-proxy-config.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-node/templates/kube-proxy.service.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-node/templates/kubelet-config.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-node/templates/kubelet-csr.json.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-node/templates/kubelet.service.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-node/vars/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-ovn/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-ovn/templates/coredns.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-ovn/templates/install.sh.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-ovn/templates/nodelocaldns-iptables.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-ovn/templates/nodelocaldns-ipvs.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-ovn/vars/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-router/kube-router.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-router/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/kube-router/templates/kuberouter.yaml.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/defaults/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/handlers/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/meta/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/apt.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/auditd.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/hardening.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/limits.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/login_defs.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/minimize_access.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/modprobe.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/pam.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/profile.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/rhosts.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/securetty.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/selinux.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/suid_sgid.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/sysctl.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/user_accounts.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/tasks/yum.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/templates/etc/audit/auditd.conf.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/templates/etc/default/ufw.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/templates/etc/initramfs-tools/modules.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/templates/etc/libuser.conf.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/templates/etc/login.defs.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/templates/etc/modprobe.d/modprobe.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/templates/etc/pam.d/rhel_system_auth.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/templates/etc/profile.d/profile.conf.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/templates/etc/securetty.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/templates/etc/sysconfig/rhel_sysconfig_init.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/templates/usr/share/pam-configs/pam_passwdqd.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/templates/usr/share/pam-configs/pam_tally2.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/vars/Amazon.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/vars/Archlinux.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/vars/Debian.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/vars/Fedora.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/vars/Oracle Linux.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/vars/RedHat-6.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/vars/RedHat.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/vars/Suse.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/os-harden/vars/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/prepare/files/sctp.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/prepare/tasks/common.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/prepare/tasks/debian.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/prepare/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/prepare/tasks/offline.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/prepare/tasks/redhat.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/prepare/tasks/suse.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/prepare/templates/10-k8s-modules.conf.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/prepare/templates/30-k8s-ulimits.conf.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/prepare/templates/95-k8s-journald.conf.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/prepare/templates/95-k8s-sysctl.conf.j2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/prepare/vars/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/imgutils" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/kubectl-node_shell" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/kubetail" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/yc-ssh-key-copy.sh" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="xzc" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2VjVJYRAX2cPZqXmH4OvTZhPv48" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="866615f8-1a97-4ef1-b078-f666c902921a" name="Default Changelist" comment="" />
+      <created>1695349404867</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695349404867</updated>
+      <workItem from="1695349406737" duration="94000" />
+      <workItem from="1695349510771" duration="7502000" />
+      <workItem from="1695892676582" duration="4000" />
+      <workItem from="1696750595433" duration="18000" />
+      <workItem from="1696750638630" duration="4149000" />
+      <workItem from="1696838986641" duration="5711000" />
+      <workItem from="1696989156073" duration="16118000" />
+      <workItem from="1697423067957" duration="5447000" />
+      <workItem from="1697613555055" duration="5673000" />
+      <workItem from="1698230236090" duration="4651000" />
+      <workItem from="1699610626717" duration="9000" />
+      <workItem from="1699610645187" duration="1582000" />
+      <workItem from="1699869653378" duration="7630000" />
+      <workItem from="1699932624195" duration="4152000" />
+      <workItem from="1700143711775" duration="1000" />
+      <workItem from="1700467778757" duration="5073000" />
+      <workItem from="1701055918177" duration="1851000" />
+      <workItem from="1701082587521" duration="2000" />
+      <workItem from="1701138371803" duration="11153000" />
+      <workItem from="1701313184267" duration="3911000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=":tada:&#10;  1. 增加 etcd 日志输出指定根目录&#10;  2. 增加私有 harbor 地址" />
+    <option name="LAST_COMMIT_MESSAGE" value=":tada:&#10;  1. 增加 etcd 日志输出指定根目录&#10;  2. 增加私有 harbor 地址" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="4315" y="294" key="CommitChangelistDialog2" timestamp="1701324359237">
+      <screen x="3000" y="0" width="2560" height="1440" />
+    </state>
+    <state x="4315" y="294" key="CommitChangelistDialog2/0.0.1500.1000/3000.0.2560.1440@3000.0.2560.1440" timestamp="1701324359237" />
+    <state x="4061" y="476" key="FileChooserDialogImpl" timestamp="1697626070324">
+      <screen x="3000" y="0" width="2560" height="1440" />
+    </state>
+    <state x="4061" y="476" key="FileChooserDialogImpl/0.0.1500.1000/3000.0.2560.1440@3000.0.2560.1440" timestamp="1697626070324" />
+    <state x="3873" y="454" key="Vcs.Push.Dialog.v2" timestamp="1701324406358">
+      <screen x="3000" y="0" width="2560" height="1440" />
+    </state>
+    <state x="3873" y="454" key="Vcs.Push.Dialog.v2/0.0.1500.1000/3000.0.2560.1440@3000.0.2560.1440" timestamp="1701324406358" />
+    <state x="574" y="314" width="564" height="536" key="find.popup" timestamp="1698230734309">
+      <screen x="0" y="0" width="1500" height="1000" />
+    </state>
+    <state x="3980" y="452" width="921" height="711" key="find.popup/0.0.1500.1000/3000.0.2560.1440@3000.0.2560.1440" timestamp="1696839638330" />
+    <state x="574" y="314" width="564" height="536" key="find.popup/0.0.1500.1000@0.0.1500.1000" timestamp="1698230734309" />
+    <state x="4006" y="508" key="git4idea.merge.GitPullDialog" timestamp="1701314753668">
+      <screen x="3000" y="0" width="2560" height="1440" />
+    </state>
+    <state x="4006" y="508" key="git4idea.merge.GitPullDialog/0.0.1500.1000/3000.0.2560.1440@3000.0.2560.1440" timestamp="1701314753668" />
+    <state x="4080" y="620" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1701324027970">
+      <screen x="3000" y="0" width="2560" height="1440" />
+    </state>
+    <state x="4080" y="620" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1500.1000/3000.0.2560.1440@3000.0.2560.1440" timestamp="1701324027970" />
+  </component>
+</project>

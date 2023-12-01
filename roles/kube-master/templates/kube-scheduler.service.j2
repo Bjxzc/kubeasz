@@ -3,13 +3,13 @@ Description=Kubernetes Scheduler
 Documentation=https://github.com/GoogleCloudPlatform/kubernetes
 
 [Service]
-ExecStart={{ bin_dir }}/kube-scheduler \
+ExecStart=/bin/bash -c "exec {{ bin_dir }}/kube-scheduler \
   --authentication-kubeconfig=/etc/kubernetes/kube-scheduler.kubeconfig \
   --authorization-kubeconfig=/etc/kubernetes/kube-scheduler.kubeconfig \
   --bind-address=0.0.0.0 \
   --kubeconfig=/etc/kubernetes/kube-scheduler.kubeconfig \
   --leader-elect=true \
-  --v=2
+  --v=2 >>{{ KUBE_SCHEDULER_LOG_FILE }} 2>&1"
 Restart=always
 RestartSec=5
 

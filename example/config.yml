@@ -61,7 +61,8 @@ INSECURE_REG:
 SANDBOX_IMAGE: "easzlab.io.local:5000/easzlab/pause:__pause__"
 
 # [containerd]容器持久化存储目录
-CONTAINERD_STORAGE_DIR: "/var/lib/containerd"
+CONTAINERD_STORAGE_DIR: "/opt/data3/containerd"
+CONTAINERD_LOG_FILE: "/opt/data3/k8s-logs/containerd.log"
 
 # [docker]容器存储目录
 DOCKER_STORAGE_DIR: "/var/lib/docker"
@@ -83,13 +84,17 @@ MASTER_CERT_HOSTS:
 # 如果flannel 使用 --kube-subnet-mgr 参数，那么它将读取该设置为每个节点分配pod网段
 # https://github.com/coreos/flannel/issues/847
 NODE_CIDR_LEN: 24
-
+KUBE_APISERVER_LOG_FILE: "/opt/data3/k8s-logs/kube-apiserver.log"
+KUBE_CONTROLLER_MANAGER_LOG_FILE: "/opt/data3/k8s-logs/kube-controller-manager.log"
+KUBE_SCHEDULER_LOG_FILE: "/opt/data3/k8s-logs/kube-scheduler.log"
 
 ############################
 # role:kube-node
 ############################
 # Kubelet 根目录
-KUBELET_ROOT_DIR: "/var/lib/kubelet"
+KUBELET_ROOT_DIR: "/opt/data3/kubelet"
+KUBELET_LOG_FILE: "/opt/data3/k8s-logs/kubelet.log"
+KUBE_PROXY_LOG_FILE: "/opt/data3/k8s-logs/kube-proxy.log"
 
 # node节点最大pod 数
 MAX_PODS: 110

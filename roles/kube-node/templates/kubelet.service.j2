@@ -25,13 +25,13 @@ ExecStartPre=/bin/mkdir -p /sys/fs/cgroup/hugetlb/system.slice
 
 ExecStartPre=/bin/mkdir -p /sys/fs/cgroup/podruntime.slice
 {% endif %}
-ExecStart={{ bin_dir }}/kubelet \
+ExecStart=/bin/bash -c "exec {{ bin_dir }}/kubelet \
   --config=/var/lib/kubelet/config.yaml \
   --container-runtime-endpoint=unix:///run/containerd/containerd.sock \
   --hostname-override={{ K8S_NODENAME }} \
   --kubeconfig=/etc/kubernetes/kubelet.kubeconfig \
   --root-dir={{ KUBELET_ROOT_DIR }} \
-  --v=2
+  --v=2 >>{{ KUBELET_LOG_FILE }} 2>&1"
 Restart=always
 RestartSec=5
 
